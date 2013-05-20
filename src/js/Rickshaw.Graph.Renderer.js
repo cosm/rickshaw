@@ -57,6 +57,9 @@ Rickshaw.Graph.Renderer = Rickshaw.Class.create( {
 			if (series[series.length - 1].x > xMax) xMax = series[series.length - 1].x;
 		} );
 
+		xMin = this.graph.start === undefined ? xMin : this.graph.start;
+		xMax = this.graph.end === undefined ? xMax : this.graph.end;
+
 		xMin -= (xMax - xMin) * this.padding.left;
 		xMax += (xMax - xMin) * this.padding.right;
 

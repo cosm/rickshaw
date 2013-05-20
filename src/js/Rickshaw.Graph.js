@@ -10,6 +10,8 @@ Rickshaw.Graph = function(args) {
 	this.defaults = {
 		interpolation: 'cardinal',
 		offset: 'zero',
+		start: undefined,
+		end: undefined,
 		min: undefined,
 		max: undefined,
 		preserve: false
